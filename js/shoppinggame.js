@@ -137,7 +137,7 @@ const loadMagicProducts = (map, prodId) => {
                 const value = item[1];
 
                 // Create and assign an instance of MagicProduct to prodObj here
-                let magProdObj;
+                let magProdObj = new MagicProduct();
 
                 if (magProdObj != undefined && magProdObj != null) {
                     for (let i = 0; i < magProdKeys.length; i++) {
