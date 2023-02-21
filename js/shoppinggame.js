@@ -127,7 +127,7 @@ const loadMagicProducts = (map, prodId) => {
     let a = new Array();
     try {
         // Call Object.key() to load the property names of the MagicProduct object in to magProdKeys array here
-        let magProdKeys = [];
+        let magProdKeys = Object.keys(new MagicProduct());
 
         let iterator_obj = map.entries();
 
