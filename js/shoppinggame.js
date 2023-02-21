@@ -229,11 +229,9 @@ const generateProductId = () => {
     return Math.ceil(Math.random() * 20);
 };
 
-
 const getProduct = (prodList, pId) => {
     return prodList.find(findProductById(pId));
 };
-
 
 // Complete this function
 const calculateBill = (prod, tBill) => {
@@ -258,10 +256,10 @@ const findPointsToBill = (roundedTotal) => {
     }
 };
 
-
 // Complete this function
-const findPointsForExpDate = (prod) => {};
-
+const findPointsForExpDate = (prod) => {
+    return prod.daysToExpire < 30 ? 10 : 0;
+};
 
 const calculatePoints = (prod, tBill) => {
     let pointsToBill = findPointsToBill(Math.round(tBill));
