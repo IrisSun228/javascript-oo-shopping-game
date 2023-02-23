@@ -388,7 +388,8 @@ const exitLost = () => {
 
 // Complete this function
 const exitWon = () => {
-    let finalStatus; 
+    let finalStatus = player.status;
+     
     console.log(`Congratulations!!! You became ${finalStatus}!`.blue);
     rateAndExit();
 };
