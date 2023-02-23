@@ -380,7 +380,8 @@ const rateAndExit = () => {
 
 // Complete this function
 const exitLost = () => {
-    let pointsToReach; // Assign calculated value to pointsToReach here
+    let pointsToReach = 500 - player.getCurrentScore(); // Assign calculated value to pointsToReach here
+    
     console.log(`Your chances are over! You are short of ${pointsToReach} to become a Shopping Master. Good Luck for next time!`.yellow);
     rateAndExit();
 };
